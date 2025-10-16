@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buscaminas: MinaQuest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Buscaminas: MinaQuest</h1>
+      <div class="controls">
+        <label for="difficulty">Dificultad:</label>
+        <select id="difficulty">
+          <option value="easy">Fácil (8x8, 10 minas)</option>
+          <option value="normal" selected>Normal (12x12, 20 minas)</option>
+          <option value="hard">Difícil (16x16, 40 minas)</option>
+        </select>
+        <button id="btn-new">Reiniciar</button>
+      </div>
+    </header>
+
+    <section class="status-bar">
+      <div class="status-item">Minas: <span id="mines-left">0</span></div>
+      <div class="status-item">Tiempo: <span id="timer">0</span>s</div>
+      <div class="status-item">Estado: <span id="game-state">Listo</span></div>
+    </section>
+
+    <main>
+      <div id="board" class="board"></div>
+    </main>
+
+    <footer>
+      <p>Controles: clic izquierdo para revelar, clic derecho para marcar bandera.</p>
+      <p>Proyecto local — equipo de 3</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
